@@ -20,6 +20,8 @@
                 <input type="text" id="lastname" name="lastname">
                 <label for="age">Your Age</label>
                 <input type="number" id="age" name="age" min="21" max="120">
+                <label for="password">Your Secret Code (must be alphanumeric character)<span class="field-required">*</span></label>
+                <input type="text" id="password" name="password" 
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
@@ -87,9 +89,10 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WV">West Virginia</option>
                         <option value="WY">Wyoming</option>
-                    </datalist>
-                    <label for="zip">Your Zipcode <span class="field-required">*</span></label>
-                    <input type="text" id="zip" name="zip">
+                    </datalists>
+                    <label for="zip">Your Zipcode</label>
+                    <input type="number" id="zip" name="zip" pattern="[0-9]{5}" tittle="5-digits US Zipcode">
+
                 </div>
             </fieldset>
 
